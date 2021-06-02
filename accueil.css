@@ -51,11 +51,10 @@ li a:hover{
 
 .nav_icon{
     padding-right: 15px;
-    color: rgb(145, 92, 248);
-}
-
-.nav_icon:hover{
     color: rgb(231, 139, 6);
+    background: linear-gradient(to right bottom, rgb(231, 139, 6),rgb(145, 92, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .produit{

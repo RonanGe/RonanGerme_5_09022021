@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang=fr>
+	<head>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=max-device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="accueil.css">
+        <link rel="stylesheet" href="panier.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+		<title>Orinoco - Oriteddy - Mon panier</title>
+	</head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="JWDP5-master/images/logo.png" alt="Logo de Orinoco">
+            </div>
+            <nav>
+                <ul>
+                <li><i class="fas fa-home nav_icon"></i>Accueil</li>
+                <li><i class="fas fa-shopping-basket nav_icon"></i>Mon panier</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <div class="panier">
+                <p>Votre panier <i class="fas fa-shopping-basket nav_icon"></i></p>
+            </div>
+
+            <div class="formulaire">
+                <p>Vos coordonnées</p>
+                <form method="post">
+                    <label for="email">Votre e-mail :</label>
+                    <input type="email"/>
+                    <br/>
+                    <label for="civilité">Civilité :</label>
+                    <select name="civilité" id="civilité">
+                        <option value="monsieur">Monsieur</option>
+                        <option value="madame">Madame</option>
+                    </select>
+                    <br/>
+                    <label for="nom">Votre nom :</label>
+                    <input type="text"/>
+                    <br/>
+                    <label for="prenom">Votre prénom :</label>
+                    <input type="text"/>
+                    <br/>
+                    <label for="adresse">Votre adresse :</label>
+                    <input type="text"/>
+                    <br/>
+                    <label for="code">Votre code postale :</label>
+                    <input type="text"/>
+                    <br/>
+                    <label for="ville">Votre ville :</label>
+                    <input type= "text"/>
+                    <br/>
+                    <label for="tel">Votre numéro de téléphone :</label>
+                    <input type="tel"/>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="logo_footer">
+                <img src="JWDP5-master/images/logo.png" alt="logo Orinoco">
+            </div>
+            <ul>
+                <li><a href=""><i class="fas fa-question-circle"></i> FAQ</a></li>
+                <li><a href="">Mentions légales</a></li>
+                <li><a href="mailto:orinoco_oriteddy@gmail.com">Contact</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

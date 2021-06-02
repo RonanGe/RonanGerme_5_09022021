@@ -1,0 +1,19 @@
+section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    justify-content: space-evenly;
+}
+
+section p{
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.panier, .formulaire{
+    background-color: rgb(243, 233, 241);
+    padding: 50px;
+    border-radius: 15px;
+    font-size: 1.2em;
+}

@@ -1,23 +1,25 @@
-const elt = document.getElementById('ancre');    
-elt.addEventListener('click', function() {          
-    elt.innerHTML = "C'est cliqué !";               
-});
-
-let content =''
-fetch("http://localhost:3000/api/teddies")
-.then(data => data.json())
-.then(teddie =>{
-    content += `
-                   <div class="card">
-                       <a href="article.html" id="ancre"><img src="${
-                         teddie.imageUrl
-                       }" class="card-img-top" alt="...">
-                       <div class="card-body">
-                       <h3 class="card-title">${teddie.name}</h3>
-                       <p class="card-text ">${teddie.description}.</p>
-                       <p class="card-text"><strong>${
-                        teddie.price}€</strong></p></a></div></div>`
-
-document.querySelector('#main').innerHTML = content
-})
-.catch(err => console.log(err))
+function loadTeddy() {
+  let params = new URL(document.location).searchParams;
+  let id = params.get("id");
+  console.log(id);
+  var a = new URL("http://localhost:3000/api/teddies/" + id);
+  console.log(a);
+  fetch(a)
+    .then((data) => data.json())
+    .then((teddie) => {
+      console.log(teddie.colors);
+      document.title = "Orinoco ~ " + teddie.name;
+      document.getElementById("nom").innerText = teddie.name;
+      document.getElementById("prix").innerText = teddie.price + "€";
+      document.getElementById("image").src = teddie.imageUrl;
+      document.getElementById("description").innerText = teddie.description;
+      teddie.colors.forEach(color=>{
+          console.log(color);
+          document.getElementById("couleur").innerHTML +="<option value="+color+">"+color+"</option>";
+      }
+        
+        )
+    })
+    .catch((err) => console.log(err));
+}
+loadTeddy();

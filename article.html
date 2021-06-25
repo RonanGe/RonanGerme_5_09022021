@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="produit.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
-		<title>Orinoco - Oriteddy-Micka</title>
+		<title>Orinoco</title>
 	</head>
 
     <body>
@@ -24,9 +24,24 @@
         </header>
  
         <section>
-           <div id="main">
-               
-           </div>
+            <image id="image"></image>
+
+            <div class="vignette_text">
+                <h3 id="nom"></h3>
+                <p class="description" id="description"></p>
+                
+                <form method="post">
+                    <p>
+                        <label for="couleur">Quelle couleur souhaitez-vous?</label><br/>
+                        <select name="couleur" id="couleur">
+                        </select>
+                    </p>
+                </form>
+                <div class="prix_btn">
+                    <p class="prix" id="prix"> </p>
+                    <button class="btn"><i class="fas fa-cart-plus"></i>Ajouter au panier </button>
+                </div>
+            </div>
         </section>
 
         <footer>

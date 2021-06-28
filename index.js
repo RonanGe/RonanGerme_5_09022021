@@ -1,5 +1,5 @@
 let content ='';
-fetch("https://ronange.github.io/RonanGerme_5_09022021/:3000/api/teddies")
+fetch("https://ronange.github.io/RonanGerme_5_09022021:3000/api/teddies")
 .then(data => data.json())
 .then(teddies => {
     teddies.forEach(teddie=>{

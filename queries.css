@@ -1,0 +1,165 @@
+@media all and (max-width: 500px){
+    body{
+        margin: 0;
+        width: 100%;
+    }
+
+    header{
+        margin: 0;
+        width: 100%;
+        display: block;
+        height: 80px;
+    }
+
+    nav{
+        width: 100%;
+        margin-top: 29px;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .logo img{
+        width: 15%;
+    }
+
+    nav li{
+        padding-right: 15px;
+    }
+
+    .nav_icon{
+        padding-right: 7px;
+    }
+
+    nav li:active{
+        border: 2px solid rgb(231, 139, 6);
+        border-radius: 15px;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    #main{
+        flex-direction: column;
+    }
+
+    .produit{
+        padding-left: 5px;
+        width: 95%;
+        margin-left: 2%;
+        margin-top: 150px;
+    }
+
+    .card{
+        height: 166px;
+        width: 98%;
+    }
+
+    .card-img-top{
+        height: 166px;
+        width: 9em;
+    }
+
+    .card-text_description{
+        width: 17%;
+    }
+
+    footer{
+        width: 100%;
+        margin: 0;
+    }
+
+    .logo_footer{
+        width: 30%;
+    }
+
+    footer li{
+        padding-bottom: 15px;
+    }
+}
+
+@media all and (min-width: 501px) and (max-width: 1023px) {
+
+    body{
+        margin: 0;
+        width: 100%;
+    }
+
+    header{
+        margin: 0;
+        width: 100%;
+        display: block;
+        height: 80px;
+    }
+
+    nav{
+        width: 100%;
+        margin-top: 37px;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .logo img{
+        width: 15%;
+    }
+
+    nav li{
+        padding-right: 15px;
+    }
+
+    .nav_icon{
+        padding-right: 7px;
+    }
+
+    nav li:active{
+        border: 2px solid rgb(231, 139, 6);
+        border-radius: 15px;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    #main{
+        flex-direction: column;
+    }
+
+    .produit{
+        padding-left: 5px;
+        width: 76%;
+        margin-left: 2%;
+        margin-top: 150px;
+    }
+
+    .card{
+        height: 166px;
+        width: 98%;
+    }
+
+    .card-img-top{
+        height: 166px;
+        width: 9em;
+    }
+
+    .card-text_description{
+        width: 17%;
+    }
+
+    footer{
+        width: 100%;
+        margin: 0;
+    }
+
+    .logo_footer{
+        width: 30%;
+    }
+
+    footer li{
+        padding-bottom: 15px;
+    }
+    
+}

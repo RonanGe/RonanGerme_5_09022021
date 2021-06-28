@@ -1,5 +1,5 @@
 let content ='';
-fetch("https://github.com/OpenClassrooms-Student-Center/JWDP5")
+fetch("https://ronange.github.io/RonanGerme_5_09022021/:3000/api/teddies")
 .then(data => data.json())
 .then(teddies => {
     teddies.forEach(teddie=>{

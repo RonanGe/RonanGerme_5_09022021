@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: "Roboto";
+    overflow-x: hidden;
 }
 
 a{
@@ -14,7 +15,6 @@ header{
     justify-content: space-between;
     background-color: rgb(243, 233, 241);
     box-shadow: 3px 3px 3px rgb(226, 203, 222);
-    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -62,7 +62,7 @@ li a:hover{
     background-color: rgb(243, 233, 241);
     width: 90%;
     border-radius: 15px;
-    margin-top: 200px;
+    margin-top: 68px;
     margin-left: 3%;
     padding-left: 4%;
     margin-bottom: 50px;

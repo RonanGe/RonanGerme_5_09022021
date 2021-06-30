@@ -1,4 +1,4 @@
-@media all and (max-width: 500px){
+@media all and (max-width: 720px){
     body{
         margin: 0;
         width: 100%;
@@ -9,11 +9,12 @@
         width: 100%;
         display: block;
         height: 80px;
+        position: relative;
     }
 
     nav{
         width: 100%;
-        margin-top: 29px;
+        margin-top: 49px;
     }
 
     .logo{
@@ -21,7 +22,7 @@
     }
 
     .logo img{
-        width: 15%;
+        width: 25%;
     }
 
     nav li{
@@ -49,7 +50,7 @@
         padding-left: 5px;
         width: 95%;
         margin-left: 2%;
-        margin-top: 150px;
+        margin-top: 85px;
     }
 
     .card{
@@ -80,7 +81,8 @@
     }
 }
 
-@media all and (min-width: 501px) and (max-width: 1023px) {
+
+@media all and (min-width: 721px) and (max-width: 1023px) {
 
     body{
         margin: 0;
@@ -90,13 +92,14 @@
     header{
         margin: 0;
         width: 100%;
-        display: block;
         height: 80px;
     }
 
     nav{
         width: 100%;
-        margin-top: 37px;
+        margin-top: 0px;
+        font-size: 1em;
+        margin-left: 17%;
     }
 
     .logo{
@@ -104,7 +107,7 @@
     }
 
     .logo img{
-        width: 15%;
+        width: 30%;
     }
 
     nav li{
@@ -124,29 +127,24 @@
         width: 100%;
     }
 
-    #main{
-        flex-direction: column;
-    }
-
     .produit{
         padding-left: 5px;
-        width: 76%;
-        margin-left: 2%;
-        margin-top: 150px;
+        width: 96%;
+        margin-left: 1%;
+        margin-top: 75px;
     }
 
     .card{
-        height: 166px;
-        width: 98%;
+        height: 183px;
     }
 
     .card-img-top{
-        height: 166px;
-        width: 9em;
+        height: 183px;
+        width: 12em;
     }
 
     .card-text_description{
-        width: 17%;
+        width: 13%;
     }
 
     footer{
@@ -155,11 +153,27 @@
     }
 
     .logo_footer{
-        width: 30%;
+        width: 16%;
     }
 
     footer li{
         padding-bottom: 15px;
     }
     
+}
+
+@media all and (min-width: 1024px) and (max-width: 1640px){
+
+    .card-img-top{
+        width: 15em;
+    }
+
+    .card-text_description{
+        width: 20%;
+    }
+
+    .produit{
+        width: 93%;
+        margin-left: 2%;
+    }
 }

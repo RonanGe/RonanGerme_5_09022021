@@ -2,7 +2,7 @@ section{
     background-color: rgb(243, 233, 241);
     width: 57%;
     border-radius: 15px;
-    margin-top: 200px;
+    margin-top: 75px;
     margin-left: 3%;
     padding-left: 5%;
     margin-left: 7%;
@@ -70,6 +70,10 @@ select, .btn{
     border-radius: 25px;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+button p{
+    margin: 0;
 }
 
 .btn i{

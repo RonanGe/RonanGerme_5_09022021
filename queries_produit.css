@@ -1,0 +1,79 @@
+@media all and (max-width: 720px){
+    section{
+        margin-top: 70px;
+        display: block;
+        width: 85%;
+        margin-left: 4%;
+        padding-right: 3%;
+    }
+
+    section img{
+        width: 88%;
+        margin-top: 20px;
+    }
+
+    .vignette_text{
+        padding-right: 0;
+    }
+
+    .prix_btn{
+        justify-content: initial;
+    }
+
+    .prix{
+        width: 30%;
+        
+    }
+
+    .btn{
+        width: 30%;
+    }
+
+    .btn i{
+        font-size: 1.5em;
+    }
+
+    button p{
+        display: none;
+    }
+}
+
+@media all and (min-width: 721px) and (max-width: 1023px){
+    section{
+        width: 90%;
+        margin-left: 3%;
+    }
+
+    section img{
+        width: 55%;
+        margin-right: 3%;
+    }
+
+    .prix{
+        width: 27%;
+    }
+
+    .btn i{
+        font-size: 1.5em;
+    }
+
+    button p{
+        display: none;
+    }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1640px){
+    section{
+        width: 90%;
+        margin-left: 2%;
+    }
+
+    .prix{
+        width: 15%;
+        padding-left: 5%;
+    }
+
+    .btn{
+        padding: 10px;
+    }
+}

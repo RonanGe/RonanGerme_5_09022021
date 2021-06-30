@@ -1,5 +1,5 @@
 let content ='';
-fetch("https://ronange.github.io/RonanGerme_5_09022021:3000/api/teddies")
+fetch("http://localhost:3000/api/teddies")
 .then(data => data.json())
 .then(teddies => {
     teddies.forEach(teddie=>{
@@ -19,3 +19,4 @@ fetch("https://ronange.github.io/RonanGerme_5_09022021:3000/api/teddies")
     document.querySelector('#main').innerHTML = content
 })
 .catch(err => console.log(err))
+

@@ -72,6 +72,12 @@ select, .btn{
     margin-bottom: 25px;
 }
 
+.btn:active{
+    background-color: silver;
+    cursor: pointer ;
+}
+
+
 button p{
     margin: 0;
 }

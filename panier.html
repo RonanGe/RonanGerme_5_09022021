@@ -26,11 +26,14 @@
         <section>
             <div class="panier" id="mainCart">
                 <p>Votre panier <i class="fas fa-shopping-basket nav_icon"></i></p>
+
+                <h2 id="finalPrice">Total : <span id="totalPrice">0 €</span></h2>
             </div>
+        </section>
 
             <div class="formulaire">
                 <p>Vos coordonnées</p>
-                <form method="post">
+                <form method="post" id="form">
                     <label for="email">Votre e-mail :</label>
                     <input type="email"/>
                     <br/>
@@ -59,8 +62,7 @@
                     <input type="tel"/>
                 </form>
             </div>
-        </section>
-
+        
         <footer>
             <div class="logo_footer">
                 <img src="JWDP5-master/images/logo.png" alt="logo Orinoco">
@@ -71,6 +73,6 @@
                 <li><a href="mailto:orinoco_oriteddy@gmail.com">Contact</a></li>
             </ul>
         </footer>
-        <script src="article.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>

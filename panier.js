@@ -1,4 +1,5 @@
 let cartProducts = JSON.parse(localStorage.getItem("Panier"))
+console.log('LSCartProducts');
 
 let urlProduct = ''
 
@@ -37,15 +38,12 @@ let urlProduct = ''
       document.getElementById("prix").innerText = teddie.price + "€";
       document.getElementById("img").src = teddie.imageUrl;
       document.getElementById("description").innerText = teddie.description;
-    console.log('nom')
     })
   
         // afficher le prix total à l'utilisateur
         totalPrice += cartProducts[i].price
-        console.log(totalPrice)
         let finalPrice = document.getElementById('totalPrice')
         finalPrice.innerHTML = ' ' + parseInt(totalPrice / 100).toFixed(2) + ' €'
-        console.log(i + ' numéro ourson')
     }
   }
   

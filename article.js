@@ -20,21 +20,24 @@ function loadTeddy() {
 }
 loadTeddy();
 
+
 const addCart = document.querySelector('button');
 addCart.addEventListener('click', function(e) { //evenement 'click' pour l'envoi au local storage
-    let teddiesChoosen = {
-        picture: loadTeddy.imageUrl,
-        firstName: loadTeddy.name,
-        color: loadTeddy.value,
-        price: loadTeddy.price,
+  let teddiesChoosen = {
+        picture: document.getElementById("image"),
+        firstName: document.getElementById("nom"),
+        color: document.getElementById("couleur"),
+        price: document.getElementById("prix"),
     }
     const teddiesAdded = localStorage.getItem('product');
     if(teddiesAdded) {
+      console.log("teddiesChoosen")
         teddiesInCArt = JSON.parse(teddiesAdded);
         teddiesInCArt.push(teddiesChoosen);
         localStorage.setItem('product', JSON.stringify(teddiesInCArt));
         alert('Ajouté au panier !');
     } else {
+      console.log("teddiesChoosen")
         teddiesInCArt = [];
         teddiesInCArt.push(teddiesChoosen);
         localStorage.setItem('product', JSON.stringify(teddiesInCArt));

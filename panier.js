@@ -1,4 +1,4 @@
-let cartProducts = JSON.parse(localStorage.getItem("product"))
+let cartProducts = JSON.parse(localStorage.getItem("cart"))
 
 //Sélection de la classe où injecter le code
 const positionElement = document.querySelector("#mainCart"); 
@@ -16,18 +16,14 @@ if(cartProducts === null){
 }
 
 else{
-    let structurePanier = [];
+    let structurePanier = new Array(cartProducts);
+    let table = document.getElementById("table"); 
+    var pos = structurePanier.indexOf('Norbert')
 
-    for(k = 0; k < cartProducts.lengh; k++){
-        structurePanier = structurePanier +=`
-        <div class="container">
-            ${cartProducts[k].picture}
-            <div>Quantité 1 - ${cartProducts[k].firstName} Prix : ${cartProducts[k].price}</div>
-        </div>
-        `;
-    }
-        if(k === cartProducts.lengh){
+    var row = table.insertRow(-1);
+    var cell1 = row.insertCell(0);
 
-        positionElement.innerHTML = structurePanier; 
-    }
+    cell1.innerHTML += structurePanier[0];
+    console.log(structurePanier);
+    
 }

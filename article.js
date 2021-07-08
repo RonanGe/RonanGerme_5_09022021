@@ -6,7 +6,9 @@
 // J'initialise local storage au chargement de la page
 // window.onload : C'est une fonction qui se lance aussiôt la la fenêtre est chargée 
 window.onload=()=>{
-  localStorage.setItem("cart",JSON.stringify([]))
+  if(!localStorage.get("cart")){
+    localStorage.setItem("cart",JSON.stringify([]))
+      }
 }
 
 // ICI je défini l'URL de base

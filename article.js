@@ -6,7 +6,7 @@
 // J'initialise local storage au chargement de la page
 // window.onload : C'est une fonction qui se lance aussiôt la la fenêtre est chargée 
 window.onload=()=>{
-  if(!localStorage.get("cart")){
+  if(!localStorage.getItem("cart")){
     localStorage.setItem("cart",JSON.stringify([]))
       }
 }
@@ -39,7 +39,7 @@ function fetchArticleById(id) {
     .then((article) => {
 
       // article.color[0] : C'est définir comme couleur par défaut la première couleur de la liste des couleurs
-      selectedArticle={picture: article.name,name:article.name,color:article.colors[0],price:article.price};
+      selectedArticle={picture: article.imageUrl,name:article.name,color:article.colors[0],price:article.price};
       updateDom(article)
     })
     .catch((err) => console.log(err));

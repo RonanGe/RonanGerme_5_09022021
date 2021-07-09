@@ -22,10 +22,10 @@ else{
     structurePanier[0].forEach(element => {
         var ligne = table.insertRow(-1);
         ligne.insertCell(0).innerHTML = "<img src=" + element.picture + "></img>";
-        ligne.insertCell(1).innerHTML = "<p class= panier_texte>" + element.name + "</p>";
-        ligne.insertCell(2).innerHTML = "<p id = id" + element.id + "</p>";
-        ligne.insertCell(3).innerHTML = "<p class= panier_texte>" + element.color + "</p>";
-        ligne.insertCell(4).innerHTML = "<p class= panier_texte>" + element.price + "€ </p>"; 
+        ligne.insertCell(1).innerHTML = "<p class= panier_name>" + element.name + "</p>";
+        ligne.insertCell(2).innerHTML = "<p id = element-ID>" + element.id + "</p>";
+        ligne.insertCell(3).innerHTML = "<p class= panier_color>" + element.color + "</p>";
+        ligne.insertCell(4).innerHTML = "<p class= panier_price>" + element.price + "€ </p>"; 
         total = (total + element.price);
     });
 

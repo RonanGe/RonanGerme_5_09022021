@@ -2,12 +2,12 @@ section{
     display: flex;
     flex-direction: row;
     margin-top: 200px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     justify-content: space-evenly;
 }
 
 section p{
-    font-weight: bolder;
+ 
     font-size: 1.5em;
 }
 
@@ -18,7 +18,77 @@ section p{
     font-size: 1.2em;
 }
 
+.panier{
+    width: 60% ;
+}
+
+.panier-vide{
+    width: 100%;
+    margin-left: 43%;
+    margin-right: 50%;
+}
+
+table{
+    width: 100%;
+}
+
+
+table img{
+    object-fit: cover;
+    height: 150px;
+    border: white solid 10px;
+    border-radius: 8px;
+    margin-top: 90px;
+}
+
+.total{
+    font-size: 1.5em;
+    border: white solid 10px;
+    border-radius: 8px;
+    width: 15%;
+    background-color: white;
+}
+
 .formulaire{
     display: flex;
     flex-direction: column;
+    margin-bottom: 150px;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-left: 17%;
+}
+
+input{
+    width: 80%;
+    height: 25px;
+    margin-bottom: 15px;
+}
+
+label{
+    font-size: 1.2em;
+}
+
+#confirm{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#id{
+    display: none;
+}
+
+#confirm_btn{
+    width: 20%;
+    height: 60px;
+    background-color: white;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1.2em;
+}
+
+#confirm_btn:active{
+    background-color: silver;
+    cursor: pointer ;
 }

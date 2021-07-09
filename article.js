@@ -39,7 +39,7 @@ function fetchArticleById(id) {
     .then((article) => {
 
       // article.color[0] : C'est définir comme couleur par défaut la première couleur de la liste des couleurs
-      selectedArticle={picture: article.imageUrl,name:article.name,color:article.colors[0],price:article.price};
+      selectedArticle={picture: article.imageUrl,name:article.name,color:article.colors[0],price:article.price, id};
       updateDom(article)
     })
     .catch((err) => console.log(err));

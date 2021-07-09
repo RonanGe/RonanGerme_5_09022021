@@ -26,51 +26,39 @@
         <section>
             <div class="panier" id="mainCart">
                 <p>Votre panier <i class="fas fa-shopping-basket nav_icon"></i></p>
-                <table id="table">
+                <table>
                     <thead>
-                    <tr>
-                    <th></th>
-                    <th>Nom</th>
-                    <th>Couleur</th>
-                    <th>Prix</th>
-                    </tr>
                 </thead>
-                <tbody></tbody>
+                <tbody id="table"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"></td>
+                        <td class="total"> Total : <span id="totalPrice"></span></td>
+                </tr></tfoot>
                 </table>
-
-                <h2 id="finalPrice">Total : <span id="totalPrice">0 €</span></h2>
             </div>
         </section>
 
             <div class="formulaire">
                 <p>Vos coordonnées</p>
-                <form method="post" id="form">
-                    <label for="email">Votre e-mail :</label>
-                    <input type="email"/>
+                <form method="POST" id="form" action="remerciement.html">
+                    <label for="email" >E-mail :</label>
+                    <input type="email" id="email"/>
                     <br/>
-                    <label for="civilité">Civilité :</label>
-                    <select name="civilité" id="civilité">
-                        <option value="monsieur">Monsieur</option>
-                        <option value="madame">Madame</option>
-                    </select>
+                    <label for="lastName" >Last name :</label>
+                    <input type="text" id="lastName"/>
                     <br/>
-                    <label for="nom">Votre nom :</label>
-                    <input type="text"/>
+                    <label for="firstName" >First name :</label>
+                    <input type="text" id="firstName"/>
                     <br/>
-                    <label for="prenom">Votre prénom :</label>
-                    <input type="text"/>
+                    <label for="adress" >Adress :</label>
+                    <input type="text" id="address"/>
                     <br/>
-                    <label for="adresse">Votre adresse :</label>
-                    <input type="text"/>
-                    <br/>
-                    <label for="code">Votre code postale :</label>
-                    <input type="text"/>
-                    <br/>
-                    <label for="ville">Votre ville :</label>
-                    <input type= "text"/>
-                    <br/>
-                    <label for="tel">Votre numéro de téléphone :</label>
-                    <input type="tel"/>
+                    <label for="city" >City :</label>
+                    <input type= "text" id="city"/>
+                    <div id="confirm">
+                        <input type="submit" id="confirm_btn" value="Commander" ></input>
+                    </div>
                 </form>
             </div>
         
